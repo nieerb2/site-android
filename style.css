@@ -1,0 +1,238 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: droid;
+    src: url('fontes/idroid.otf') format('opentype');
+    font-weight: normal;}
+    
+
+:root{
+    --cor0: #c5ebd6;
+    --cor1: #83e1ad;
+    --cor2: #3ddc84;
+    --cor3: #2fa866;
+    --cor4: #1a5c37;
+    --cor5: #063d1e;
+
+    --fontes-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fontes-destaque: 'Bebas nue', cursive, sans-serif;
+    --fontes-android: 'droid', cursive, sans-serif;
+
+}
+
+ *{
+    margin: 0px;
+    padding: 0px;
+ }  
+ 
+ main p{
+    margin: 15px 0px;
+    text-align: justify;
+    line-height: 2em;
+ }
+
+
+body{
+    background-color: rgb(230, 219, 200);
+    font-family: var(--fontes-destaque); 
+    height: 100%;
+   
+}
+header{
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
+    text-align: center;
+    
+    font-family: var(--fontes-destaque);
+    min-height: 150px;
+    padding-top: 50px;
+}
+main{
+    font-family: var(--fontes-destaque);
+    font-size: 1em;
+    background-color: white;
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.151);
+    padding: 20px;
+    margin-bottom: 30px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+main img{
+    width: 100%;
+}
+.pequena{
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+
+nav > a{
+    text-decoration: none;
+    padding: 10px;
+    transition-duration: .5s;
+    font-weight: bold;
+    
+    
+}
+nav > a:visited{
+    color:var(--cor1);
+}
+
+nav >a:hover{
+    background-color: var(--cor3);
+    color: var(--cor5);
+    margin: 0px;
+    border-radius: 10px;
+    
+    
+}
+
+nav{
+    
+    background-color: var(--cor5);
+    padding: 10px;
+    box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.295);
+ 
+   
+  
+   text-align: left;
+}
+main  h1{
+    
+   
+    font-family: droid;
+    color: var(--cor5);
+    font-weight: normal;
+}
+#texto1{
+    color: white;
+    
+}
+h2{
+    background-image: linear-gradient(to right, var(--cor1), transparent);
+    font-family: droid;
+    color: var(--cor3);
+    font-size: 1.2em;
+    text-indent: 6px;
+    font-weight: normal;
+}
+p{
+    text-indent: 2em;
+}
+.citacao{
+    background-color:var(--cor1) ;
+    color: var(--cor4);
+    text-decoration: none;
+    font-weight: bolder;
+    padding: 2px;
+}
+aside  a.citacao{
+    color: var(--cor4);
+    padding: 1px;
+}
+header >p{
+    color: white;
+    font-size: 1.2em;
+    margin-top: 20px;
+    font-family: var(--fontes-padrao);
+    max-width: 600px;
+    margin: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.301);
+    
+}
+header >h1{
+    font-size: 3.0em;
+    margin-bottom: 20px;
+    font-family: var(--fontes-destaque);
+   text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.301);
+   color: white;
+   font-weight: normal;
+
+   
+    
+    
+    
+    
+}
+
+
+.citacao::after{
+    content: '\1F517';
+   
+    
+    
+}
+strong{
+    color: #1F5F3B;
+}
+
+div.container{
+    background-color: var(--cor5);
+   
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    position: relative;
+    padding-bottom: 58.5%;
+    
+}
+div.container > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+
+}
+
+
+
+
+
+aside{
+    background-color:  var(--cor1);
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.329);
+}
+aside >h3{
+    background-color: var(--cor2);
+    color: white;
+    margin: -10px -10px 0px -10px;
+    padding: 10px;
+    border-radius: 10px 10px 0px 0px;
+    
+}
+aside > ul{
+    list-style-type: '\2714\00A0';
+    list-style-position: inside;
+    columns: 2;
+}
+
+
+
+
+
+footer{
+    background-color: var(--cor5);
+    text-align: center;
+    color: white;
+    padding: 3px;
+    font-size: 0.8em;
+}
+footer > p > a{
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+}
+footer > p > a:hover{
+    text-decoration: underline;
+    color: var(--cor1);
+    
+}
